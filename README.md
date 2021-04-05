@@ -10,6 +10,11 @@ Once unzipped add the following to the end of your index.html file (just before 
 
 Then simply refresh the page if you still have issues clear your cache
 
+# Modifications
+You can change all images by replacing the .jpg in fanart folder
+
+If you want more or less images in rotation modify the cssbuster.js with a text editor (this will be pretty self explanatory when you see the file)
+
 # known issues 
 Not all images work well on mobile phones (some vertical displays)
 
