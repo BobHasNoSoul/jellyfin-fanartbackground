@@ -1,5 +1,5 @@
 # jellyfin-fanartbackground
-A simple yet effective way to add a refreshing background on the jellyfin login page
+A simple yet effective way to add a refreshing background on the jellyfin login page it now auto reloads the background image after 10 seconds
 
 # Installation
 
