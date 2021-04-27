@@ -3,7 +3,7 @@ function changeImg(imgNumber)	{
 	var imgShown = document.body.style.backgroundImage;
 	var newImgNumber =Math.floor(Math.random()*myImages.length);
         var sheet = window.document.styleSheets[0];
-        sheet.insertRule('#loginPage { background: url('+myImages[newImgNumber]+') !important; background-size: cover !important; }', sheet.cssRules.length)
+        sheet.insertRule('#loginPage { background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('+myImages[newImgNumber]+') !important; background-size: cover !important; }', sheet.cssRules.length)
 }
 window.onload=changeImg;
 
