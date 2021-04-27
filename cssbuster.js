@@ -1,9 +1,11 @@
 function changeImg(imgNumber)	{
-	var myImages = ["/web/jellyfin-fanartbackground-main/1.jpg", "/web/jellyfin-fanartbackground-main/2.jpg", "/web/jellyfin-fanartbackground-main/3.jpg", "/web/jellyfin-fanartbackground-main/4.jpg", "/web/jellyfin-fanartbackground-main/5.jpg", "/web/jellyfin-fanartbackground-main/6.jpg", "/web/jellyfin-fanartbackground-main/7.jpg", "/web/jellyfin-fanartbackground-main/8.jpg", "/web/jellyfin-fanartbackground-main/9.jpg", "/web/jellyfin-fanartbackground-main/10.jpg", "/web/jellyfin-fanartbackground-main/11.jpg", "/web/jellyfin-fanartbackground-main/12.jpg", "/web/jellyfin-fanartbackground-main/13.jpg", "/web/jellyfin-fanartbackground-main/14.jpg", "/web/jellyfin-fanartbackground-main/15.jpg", "/web/jellyfin-fanartbackground-main/16.jpg", "/web/jellyfin-fanartbackground-main/17.jpg", "/web/jellyfin-fanartbackground-main/18.jpg", "/web/jellyfin-fanartbackground-main/19.jpg", "/web/jellyfin-fanartbackground-main/20.jpg", "/web/jellyfin-fanartbackground-main/21.jpg", "/web/jellyfin-fanartbackground-main/22.jpg", "/web/jellyfin-fanartbackground-main/23.jpg", "/web/jellyfin-fanartbackground-main/24.jpg", "/web/jellyfin-fanartbackground-main/25.jpg", "/web/jellyfin-fanartbackground-main/26.jpg", "/web/jellyfin-fanartbackground-main/27.jpg", "/web/jellyfin-fanartbackground-main/28.jpg", "/web/jellyfin-fanartbackground-main/29.jpg", "/web/jellyfin-fanartbackground-main/30.jpg"]; 
-	var imgShown = document.body.style.backgroundImage;
-	var newImgNumber =Math.floor(Math.random()*myImages.length);
-        var sheet = window.document.styleSheets[0];
-        sheet.insertRule('#loginPage { background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('+myImages[newImgNumber]+') !important; background-size: cover !important; }', sheet.cssRules.length)
+    var myImages = ["/web/fanart/1.jpg", "/web/fanart/2.jpg", "/web/fanart/3.jpg", "/web/fanart/4.jpg", "/web/fanart/5.jpg", "/web/fanart/6.jpg", "/web/fanart/7.jpg", "/web/fanart/8.jpg", "/web/fanart/9.jpg", "/web/fanart/10.jpg", "/web/fanart/11.jpg", "/web/fanart/12.jpg", "/web/fanart/13.jpg", "/web/fanart/14.jpg", "/web/fanart/15.jpg", "/web/fanart/16.jpg", "/web/fanart/17.jpg", "/web/fanart/18.jpg", "/web/fanart/19.jpg", "/web/fanart/20.jpg", "/web/fanart/21.jpg", "/web/fanart/22.jpg", "/web/fanart/23.jpg", "/web/fanart/24.jpg", "/web/fanart/25.jpg", "/web/fanart/26.jpg", "/web/fanart/27.jpg", "/web/fanart/28.jpg", "/web/fanart/29.jpg", "/web/fanart/30.jpg"]; 
+    var imgShown = document.body.style.backgroundImage;
+    var newImgNumber =Math.floor(Math.random()*myImages.length);
+    var sheet = window.document.styleSheets[0];
+    sheet.insertRule('#loginPage { background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('+myImages[newImgNumber]+') !important; background-size: cover !important; }', sheet.cssRules.length)
 }
 window.onload=changeImg;
-
+setInterval(function() {
+changeImg('+newImgNumber+')
+}, 10000);
