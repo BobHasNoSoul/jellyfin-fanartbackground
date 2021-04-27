@@ -9,7 +9,7 @@ A simple yet effective way to add a refreshing background on the jellyfin login 
     
 Once unzipped add the following to the end of your index.html file using `sudo nano index.html` (and insert the following just before the final </body> tag
 
-    <script src="fanart/cssbuster.js"></script>
+    <script src="jellyfin-fanartbackground-main/cssbuster.js"></script>
 
 Then simply refresh the page if you still have issues clear your cache
 
