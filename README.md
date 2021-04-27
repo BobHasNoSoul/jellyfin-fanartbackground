@@ -2,9 +2,12 @@
 A simple yet effective way to add a refreshing background on the jellyfin login page
 
 # Installation
-Simply download this as a zip file (or grab the files manually it will do the same) and make them a new directory called fanart in your jellyfin/web directory (mine on linux is /usr/share/jellyfin/web/) so the final result for all the files would be /usr/share/jellywin/web/fanart example: /usr/share/jellyfin/web/fanart/cssbuster.js
 
-Once unzipped add the following to the end of your index.html file (just before the final </body> tag
+    cd /usr/share/jellyfin/web
+    sudo wget https://github.com/BobHasNoSoul/jellyfin-fanartbackground/archive/refs/heads/main.zip -o fanart.zip
+    sudo unzip fanart.zip
+    
+Once unzipped add the following to the end of your index.html file using `sudo nano index.html` (and insert the following just before the final </body> tag
 
     <script src="fanart/cssbuster.js"></script>
 
